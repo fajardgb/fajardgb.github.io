@@ -173,35 +173,54 @@ html {
     height: 450px; /* Adjust height as necessary */
 }
 
+
 @media (max-width: 768px) {
     /* Header adjustments */
     .main-header {
-        width: 100%; /* Ensure the header takes the full width */
-        text-align: center; /* Center the header content */
+        width: 100%; /* Full width header */
+        padding: 10px 0; /* Reduce padding */
     }
-    .main-nav {
-        flex-direction: column; /* Stack logo and nav items vertically */
-        padding: 0; /* Remove padding to allow full width utilization */
+
+    .logo .nav ul {
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
     }
-    .logo, .nav ul {
-        width: 100%; /* Full width for both logo and nav container */
-        justify-content: center; /* Center items for smaller screens */
-        margin: 0 auto; /* Center-align the containers */
+
+    .logo a {
+        font-size: 20px; /* Smaller logo text */
+        padding: 0.5em; /* Less padding around the logo */
     }
     .nav ul {
-        flex-direction: column; /* Stack nav items vertically */
+        flex-direction: row; /* Keep items inline */
+        padding: 0;
+        justify-content: center; /* Center items for smaller screens */
+    }
+    .nav li {
+        padding: 0 5px; /* Less padding around navigation items */
     }
     .nav a {
-        width: 100%; /* Full width for nav links to enhance touch area */
-        text-align: center; /* Ensure text is centered within each link */
+        font-size: 10px; /* Smaller font size for navigation links */
+        padding: 5px; /* Adjust padding */
+        width: 100%; /* Full width for navigation items */
     }
-    /* Ensuring images are centered and cover the screen appropriately */
-    .brain-img, body img {
-        width: 100%; /* Make images responsive */
-        height: auto; /* Maintain aspect ratio */
-        margin: 0 auto; /* Center images horizontally */
+    .name-large {
+        font-size: 35px; /* Significantly smaller title for better fit */
+        margin-top: 20px; /* Less margin on the top */
     }
-    /* Adjust iframe for contact map to be responsive and fill width on smaller screens */
+    .brain-img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .icon {
+        width: 30px; /* Smaller icons */
+        height: 30px;
+        padding: 0 5px; /* Adjust padding around icons for tighter fit */
+    }
+    /* Adjust iframe for contact map to be more responsive on smaller screens */
+
     .contact-map iframe {
         width: 100%; /* Full width for iframe */
         max-width: none; /* Override any max-width set elsewhere */
@@ -216,5 +235,10 @@ html {
     .contact-text, .contact-map {
         padding: 10px; /* Add some padding for spacing */
         box-sizing: border-box; /* Include padding in width calculation */
+    }
+    /* Ensure that all images within the body are responsive and do not overflow the viewport */
+    body img {
+        max-width: 100%;
+        height: auto;
     }
 }
