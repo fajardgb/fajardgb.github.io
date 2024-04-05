@@ -90,44 +90,6 @@ html {
     height: auto;
 }
 
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-    .nav ul {
-        flex-direction: column; /* Stack the navigation items */
-        align-items: center; /* Center-align the items */
-    }
-    .main-nav {
-        flex-direction: column;
-    }
-    .logo a, .nav a {
-        margin: 0.5em 0; /* Adjust margin for smaller screens */
-    }
-    .name-large {
-        font-size: 50px; /* Adjust main heading font size on smaller screens */
-    }
-    .section-header {
-        font-size: 30px; /* Adjust section headers font size */
-    }
-    .contact-info {
-        flex-direction: column; /* Stack contact info vertically */
-    }
-    .contact-map iframe {
-        max-width: 100%; /* Ensure map is not wider than the screen */
-        height: auto; /* Adjust height based on the width */
-    }
-    .links {
-        font-size: 30px; /* Adjust links section font size */
-    }
-    .links a {
-        padding: 20px; /* Adjust padding around links */
-    }
-    .icon {
-        width: 30px; /* Adjust icon size */
-        height: 30px;
-    }
-}
-
-
 .main-header {
     /* position: -webkit-sticky; */
     position: sticky;
@@ -209,4 +171,46 @@ html {
     width: 100%; /* Make the iframe responsive to the container's width */
     max-width: 600px; /* You can adjust this to fit your design */
     height: 450px; /* Adjust height as necessary */
+}
+
+
+@media (max-width: 768px) {
+    /* Header adjustments */
+    .main-header {
+        padding: 10px 0; /* Reduce padding */
+    }
+    .logo a {
+        font-size: 20px; /* Smaller logo text */
+        padding: 0.5em; /* Less padding around the logo */
+    }
+    .nav ul {
+        flex-direction: row; /* Keep items inline */
+        padding: 0;
+        justify-content: center; /* Center items for smaller screens */
+    }
+    .nav li {
+        padding: 0 5px; /* Less padding around navigation items */
+    }
+    .nav a {
+        font-size: 14px; /* Smaller font size for navigation links */
+        padding: 5px; /* Adjust padding */
+    }
+    .name-large {
+        font-size: 35px; /* Significantly smaller title for better fit */
+        margin-top: 20px; /* Less margin on the top */
+    }
+    .icon {
+        width: 30px; /* Smaller icons */
+        height: 30px;
+        padding: 0 5px; /* Adjust padding around icons for tighter fit */
+    }
+    /* Adjust iframe for contact map to be more responsive on smaller screens */
+    .contact-map iframe {
+        height: 300px; /* Shorter height for the map */
+    }
+    /* Ensure that all images within the body are responsive and do not overflow the viewport */
+    body img {
+        max-width: 100%;
+        height: auto;
+    }
 }
