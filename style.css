@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+    /* color:black; */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------- nav -------- */
+/* .nav ul {
+    margin: 0;
+} */
+
+.nav ul {
+    display: flex; /* Enable flexbox for ul */
+    justify-content: flex-end; /* Align items to the end (right) */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* .nav li {
+    display: inline;
+} */
+
+.nav li {
+    padding: 0.5em; /* Adjust padding as needed */
+}
+
+.logo a {
+    color: black; /* Style for the logo link */
+    text-decoration: none;
+    padding: .8em;
+    margin: 1em;
+    font-size: 28px;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .2em;
+    margin: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
+/* .main-nav {
+    text-align: right;
+    font-size: 1.6em;
+    font-weight: bold;
+    background-color:#b3d4fc;
+} */
+
+.main-nav {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Align items on both ends */
+    align-items: center; /* Center items vertically */
+    background-color: #b3d4fc;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 1em; /* Add some padding on the sides */
+}
+
+/* ------- header -------- */
+.brain-img {
+    width: 1000px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.main-header {
+    padding-bottom: 15px;
+}
+
+.links {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(19, 104, 160)
+}
+
+.links a {
+    padding: 35px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    margin: 0 auto;
+    display: inline-flex;
+}
+
+.icon:hover {
+    background-color: gray;
+}
+
+
+.name-large {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    font-size: 100px;
+    color: rgb(19, 104, 160);
+}
+
+/* ------- section-content -------- */
+
+.content-section {
+    margin: 1em;
+
+}
+
+.container {
+    color: #777;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 60px;
+    color: #555;
+    text-align: center;
+}
+
+/* ------- contact-info -------- */
+
+.contact-info {
+    display: flex;
+    justify-content: space-between; /* This will space out the child elements */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.contact-text, .contact-map {
+    flex: 1; /* Each child will take up an equal amount of space */
+}
+
+/* Optionally, adjust the width of the iframe directly in CSS rather than inline HTML */
+.contact-map iframe {
+    width: 100%; /* Make the iframe responsive to the container's width */
+    max-width: 600px; /* You can adjust this to fit your design */
+    height: 450px; /* Adjust height as necessary */
+}
