@@ -178,7 +178,11 @@ html {
     /* Header adjustments */
     .main-header {
         width: 100%; /* Full width header */
-        padding: 10px 0; /* Reduce padding */
+        text-align: center;
+        /* Reduce padding */
+    }
+    .main-nav {
+        padding: 0;
     }
 
     .logo .nav ul {
@@ -201,7 +205,6 @@ html {
     }
     .nav a {
         font-size: 10px; /* Smaller font size for navigation links */
-        padding: 5px; /* Adjust padding */
         width: 100%; /* Full width for navigation items */
     }
     .name-large {
