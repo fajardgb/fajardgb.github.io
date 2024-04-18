@@ -145,6 +145,7 @@ html {
 .content-section-img-left img {
     width: 70px; /* Adjust the width of the image as needed */
     height: auto; /* This will maintain the aspect ratio of the image */
+    margin: 15px;
 }
 
 .content-section-img-right {
@@ -157,6 +158,7 @@ html {
     width: 200px; /* Adjust the width of the image as needed */
     height: auto; /* This will maintain the aspect ratio of the image */
     order: 2; /* This explicitly positions the image to the right */
+    margin: 15px;
 }
 
 
