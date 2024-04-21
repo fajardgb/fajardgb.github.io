@@ -136,6 +136,25 @@ html {
     padding: 0 1.5em;
 }
 
+.aboutme-content-section {
+    display: flex; /* This will arrange the child elements (image and text) side by side */
+    align-items: center; /* This will vertically center align the text with the image */
+    gap: 20px; /* This adds some space between the image and the text */
+}
+
+.aboutme-content-section img {
+    width: 220px; /* Adjust the width of the image as needed */
+    height: auto;
+    margin: 30px;
+    border: 2px solid white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 550 / 50%;
+    overflow: hidden; 
+    object-fit: cover;
+    display: block;
+}
+
 .content-section-img-left {
     display: flex; /* This will arrange the child elements (image and text) side by side */
     align-items: center; /* This will vertically center align the text with the image */
