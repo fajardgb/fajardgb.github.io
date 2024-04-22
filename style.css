@@ -42,7 +42,7 @@ html {
     text-decoration: none;
     padding: .8em;
     margin: 1em;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .nav a {
@@ -162,7 +162,7 @@ html {
 }
 
 .content-section-img-left img {
-    width: 70px; /* Adjust the width of the image as needed */
+    width: 40px; /* Adjust the width of the image as needed */
     height: auto; /* This will maintain the aspect ratio of the image */
     margin: 15px;
 }
