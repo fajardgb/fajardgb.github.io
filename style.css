@@ -79,7 +79,7 @@ html {
 /* ------- header -------- */
 .brain-img {
     margin: 0 auto;
-    width: 1000px;
+    width: 750px;
     height: auto;
     display: block;
     margin: auto;
@@ -143,7 +143,7 @@ html {
 }
 
 .aboutme-content-section img {
-    width: 220px; /* Adjust the width of the image as needed */
+    width: 320px; /* Adjust the width of the image as needed */
     height: auto;
     margin: 30px;
     border: 2px solid white;
@@ -207,6 +207,7 @@ html {
 
 .contact-text, .contact-map {
     flex: 1; /* Each child will take up an equal amount of space */
+    align-items: center; /* Center-align the content */
 }
 
 /* Optionally, adjust the width of the iframe directly in CSS rather than inline HTML */
@@ -214,6 +215,7 @@ html {
     width: 100%; /* Make the iframe responsive to the container's width */
     max-width: 600px; /* You can adjust this to fit your design */
     height: 450px; /* Adjust height as necessary */
+    align-content: center;
 }
 
 
