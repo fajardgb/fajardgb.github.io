@@ -91,13 +91,22 @@ html {
     height: auto;
 }
 
-.links {
+/* .links {
     text-align: center;
     margin: 0;
     padding: 10px;
     font-size: 50px;
     color: rgb(19, 104, 160)
-}
+} */
+
+/* Style for the links to be displayed in a grid */
+.links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    text-align: center;
+  }
 
 .links a {
     padding: 35px;
@@ -135,6 +144,13 @@ html {
     margin: 0 auto;
     padding: 0 1.5em;
 }
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+  }
 
 .aboutme-content-section {
     display: flex; /* This will arrange the child elements (image and text) side by side */
@@ -283,9 +299,9 @@ html {
     }
 
     .icon {
-        width: 30px; /* Smaller icons */
-        height: 30px;
-        padding: 0 5px; /* Adjust padding around icons for tighter fit */
+        width: 50px; /* Smaller icons */
+        height: 50px;
+        /* padding: 0 5px; Adjust padding around icons for tighter fit */
     }
     /* Adjust iframe for contact map to be more responsive on smaller screens */
 
@@ -308,5 +324,8 @@ html {
     body img {
         max-width: 100%;
         height: auto;
+    }
+    .contact-container {
+        grid-template-columns: 1fr;
     }
 }
