@@ -213,6 +213,35 @@ html {
     /* text-align: center; */
 }
 
+/* ------- Presentations -------- */
+.presentation-item {
+    text-align: center;
+    margin: 2em 0; /* Add some margin between presentation items */
+}
+
+.presentation-item img {
+    width: 65%; /* Adjust the image size */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+/* ------- PDF Viewer -------- */
+.pdf-viewer {
+    text-align: center;
+    margin: 2em 0; /* Add margin to space it out from other content */
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+}
+
+.pdf-viewer iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove border around the iframe */
+}
+
+
+
 /* ------- contact-info -------- */
 
 .contact-info {
