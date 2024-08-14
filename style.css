@@ -156,12 +156,13 @@ html {
     display: flex; /* This will arrange the child elements (image and text) side by side */
     align-items: center; /* This will vertically center align the text with the image */
     gap: 20px; /* This adds some space between the image and the text */
+    font-size: 17px;
 }
 
 .aboutme-content-section img {
-    width: 600px; /* Adjust the width of the image as needed */
+    width: 800px; /* Adjust the width of the image as needed */
     height: auto;
-    margin: 30px;
+    margin: 10px;
     border: 2px solid white;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -174,7 +175,7 @@ html {
 .content-section-img-left {
     display: flex; /* This will arrange the child elements (image and text) side by side */
     align-items: center; /* This will vertically center align the text with the image */
-    gap: 20px; /* This adds some space between the image and the text */
+    gap: 10px; /* This adds some space between the image and the text */
 }
 
 .content-section-img-left img {
@@ -238,6 +239,42 @@ html {
     width: 100%;
     height: 100%;
     border: none; /* Remove border around the iframe */
+}
+
+
+/* ------- Contact Section -------- */
+.contact-container {
+    display: flex;
+    flex-direction: column; /* Stack icons above map */
+    align-items: center; /* Center the content horizontally */
+    gap: 20px; /* Add some space between icons and map */
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: space-around; /* Spread the icons out */
+    align-items: center;
+    gap: 30px; /* Add more space between the icons */
+    width: 100%; /* Ensure icons span the width of the container */
+    max-width: 800px; /* Set a maximum width for the icons */
+}
+
+.contact-icons .icon {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-map {
+    display: flex;
+    justify-content: center; /* Center the map horizontally */
+    width: 100%;
+}
+
+.contact-map iframe {
+    max-width: 600px; /* Limit the max-width of the iframe */
+    width: 100%; /* Make iframe responsive */
+    height: 450px;
+    border: none;
 }
 
 
