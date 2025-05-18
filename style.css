@@ -191,11 +191,12 @@ html {
 }
 
 .content-section-img-right img {
-    width: auto; /* Adjust the width of the image as needed */
-    height: 200px; /* This will maintain the aspect ratio of the image */
+    width: 370px; /* Adjust the width of the image as needed */
+    height: auto; /* This will maintain the aspect ratio of the image */
     order: 2; /* This explicitly positions the image to the right */
     margin: 15px;
 }
+
 
 
 .section-header {
