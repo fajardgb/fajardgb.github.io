@@ -421,4 +421,66 @@ html {
     .contact-container {
         grid-template-columns: 1fr;
     }
+
+    /* Project Items Mobile Optimization */
+    .content-section-img-right {
+        flex-direction: column; /* Stack image above text on mobile */
+        text-align: center; /* Center align content */
+        gap: 15px; /* Add consistent spacing */
+    }
+    
+    .content-section-img-right img {
+        width: 100%; /* Make images responsive */
+        max-width: 300px; /* Limit maximum width */
+        order: 1; /* Move image to top */
+        margin: 0 auto 15px auto; /* Center image with bottom margin */
+    }
+    
+    .content-section-img-right p {
+        order: 2; /* Move text below image */
+        font-size: 16px; /* Ensure readable text size */
+        line-height: 1.5; /* Improve readability */
+        margin: 0; /* Remove default margins */
+    }
+    
+    .project-item {
+        margin-bottom: 40px; /* Increase spacing between projects */
+        padding: 15px; /* Add padding around each project */
+        background-color: #f9f9f9; /* Light background for better separation */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+    }
+    
+    .project-title {
+        font-size: 20px; /* Slightly smaller on mobile */
+        text-align: center; /* Center align titles */
+        margin-bottom: 15px; /* Consistent spacing */
+        padding-bottom: 8px; /* Adjust padding */
+    }
+    
+    /* Ongoing Projects Container */
+    .ongoing-projects {
+        padding: 0 10px; /* Add side padding */
+    }
+}
+
+
+/* Additional responsive breakpoint for very small screens */
+@media (max-width: 480px) {
+    .project-title {
+        font-size: 18px; /* Even smaller on very small screens */
+    }
+    
+    .content-section-img-right img {
+        max-width: 250px; /* Smaller max width for tiny screens */
+    }
+    
+    .content-section-img-right p {
+        font-size: 15px; /* Slightly smaller text */
+    }
+    
+    .project-item {
+        margin-bottom: 30px; /* Reduce spacing on very small screens */
+        padding: 12px; /* Less padding */
+    }
 }
