@@ -61,7 +61,8 @@ html {
     display: flex; /* Use flexbox */
     justify-content: space-between; /* Align items on both ends */
     align-items: center; /* Center items vertically */
-    background-color: #b3d4fc;
+    /* background-color: #b3d4fc; */ 
+    background-color: #9DC183;
     font-size: 15px;
     font-weight: bold;
     padding: 0 1em; /* Add some padding on the sides */
@@ -73,7 +74,8 @@ html {
     top: 0;
     z-index: 1000px;
     padding-bottom: 15px;
-    background-color: #b3d4fc;
+    /* background-color: #b3d4fc; */
+    background-color: #9DC183;
 }
 
 /* ------- header -------- */
@@ -246,7 +248,8 @@ html {
 .project-title {
     font-size: 22px; /* Adjust the font size to be larger than regular text but smaller than the main section header */
     font-weight: bold; /*Make the text bold to stand out */
-    color: #b3d4fc; /* Choose a color that contrasts well with the body text */
+    /* color: #b3d4fc; Choose a color that contrasts well with the body text */
+    color: #9DC183;
     margin-bottom: 10px; /* Add some space below the title */
     border-bottom: 2px solid black; /* Add a bottom border to give a heading-like appearance */
     padding-bottom: 5px; /* Add some padding at the bottom for spacing */
@@ -254,7 +257,7 @@ html {
 }
 
 .project-title::selection {
-    background-color: #e0f7fa; /* Light blue background color for selected text */
+    background-color: #e0f7fa; /*Light blue background color for selected text
     /* color: #000; Optional: change the text color of the selection */
 }
 
@@ -335,7 +338,8 @@ html {
         padding-bottom: 15px;
         z-index: 1000px;
         /* Reduce padding */
-        background-color: #b3d4fc;
+        /* background-color: #b3d4fc; */
+        background-color: #9DC183;
     }
 
     .main-nav {
@@ -345,7 +349,8 @@ html {
         align-items: center;
         margin: 0;
         font-weight: bold;
-        background-color: #b3d4fc;
+        /* background-color: #b3d4fc; */
+        background-color: #9DC183;
     }
 
     .logo .nav ul {
